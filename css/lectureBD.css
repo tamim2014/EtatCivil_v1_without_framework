@@ -1,0 +1,174 @@
+ 
+	 /*Styles de la page lectureBD_menu( appelee par le bouon Liste acte de naissance de la page d'accueil)*/
+	 
+	 /*PANEAU DE GAUCHE */ 
+	    /*je relativise par rapport à un conteneur blanc que je sais d'ailleurs pas d'où il vient. Il s'est incrusté dans le panneau de droite , le me rappelle pas l'avoir mis ça m'arrange, donc je le laisse */
+		/* .boutonAccueil {  background-color: #e5eecc; height: 100px; box-shadow: 1px 1px 0px 0px green;  -webkit-border-radius:10px; postion : relative ; width:100%; } */ 
+	     .kangaLaBoutonAccueil {  
+		                 background-color: #e5eecc; 
+						 height: 100px; 
+						 box-shadow: 1px 1px 0px 0px #cdbe9f;  /*Essayer le  green pour voir */ 
+						 postion : relative ; 
+						 height: 100px;   width:80%; margin-left:10%;
+						 padding-top : 60px;
+						 border-radius:10px;
+						 -webkit-border-radius:10px;
+						 -moz-border-radius:10px;
+						 } 
+		 .kangaLaBoutonPopup {  
+		                 background-color: #e5eecc; 
+						 height: 100px; 
+						 box-shadow: 1px 1px 0px #cdbe9f;  
+						 position:absolute; left:120px; top:100px;
+						 width:100%;
+						 padding-top : 60px; width:55%;
+						 border-radius:10px;
+						 -webkit-border-radius:10px;
+						 -moz-border-radius:10px;
+						 }
+		 /* conntient les boutons "Liste par île" et "Imprimer" */			 
+		 .kangalaheMenu {  
+		                 background-color: #e5eecc; 
+						 height: 100px; 
+						 box-shadow: 1px 1px 0px 0px  #cdbe9f;
+						 padding-top : 60px;  
+						 width:100%;       
+						 padding-top:45px; 
+						 height:120px; 
+						 position:relative; 
+						 bottom:0px; 
+						  border-radius:10px;
+						 -webkit-border-radius:10px;
+						 -moz-border-radius:10px;
+						 }
+         /*Pourquoi aucun effet sur piedMenuGauche? */
+	 	 .teteMenuGauche { background-color: #cdbe9f; height: 30px;  font-weight: bold;  font-style: italic; font-family: "Times New Roman", Georgia, Serif;    }
+	     .piedMenuGauche { background-color: #cdbe9f; height: 30px;  font-weight: bold;    } /* Pourquoi le  display:block; n'est pas nécessaire ici? */
+	     .teteSousMenuDroite {  background-color: #cdbe9f; height:30px; width:186px;      font-weight: bold;  font-style: italic; font-family: "Times New Roman", Georgia, Serif;}
+	     .piedSousMenuDroite {  background-color: #cdbe9f; color:#cdbe9f; height:30px; width:186px;  display:block;  }  /* J'ai fais expres de cacher le message. Car elle pollue le sous-menu*/
+		 .piedSousMenuDroite:hover {  background-color:#ffffff;  color: #000000; height:30px; width:186px;  display:block;  font-weight: bold;  font-style: italic; font-family: "Times New Roman", Georgia, Serif; } 
+		 .piedMenuGauche:hover {  background-color:#ffffff;  font-weight: bold;  font-style: italic; font-family: "Times New Roman", Georgia, Serif;  } /* aucun effet */
+          #print__:hover {  background-color:#ffffff;   } /* aucun effet */ /* alors je vais le faire en jQuery */
+         
+
+		#panel2  { /* panel yahé menu de gauche - contient les îles Ngazidja, Moheli, Anjouan*/
+		     list-style:none; text-align:center;
+			 display: none; 
+			 color: ; /* je sais pas pourquoi mais...can not change the font color. Yet I do love white on green !!! */
+		     background-color: silver; /* no problem su le fond mais comme la police refuse de changer de couleur, je prefer ce fond que le vert % au color police imposé */
+			 border: solid 1px #c3c3c3;
+			 width:150px; 
+			 position:relative; left: 34px;
+
+		    }
+		.panel3  { /* panel yahé sous-sous-menu de  à droite   - contient les préfectures Moroni-bambao ,Hambou, ...etc*/
+		     list-style:none; text-align:center;
+			 display: none; 
+			 color: ; /* je sais pas pourquoi mais...can not change the font color. Yet I do love white on green !!! */
+		     background-color: silver; /* no problem su le fond mais comme la police refuse de changer de couleur, je prefer ce fond que le vert % au color police imposé */
+			 border: solid 1px #c3c3c3;
+			 width:180px; /* ct  width:150px; mais HAMAHAMET-MBOIKOU ne rentrait pas */ 
+			 position:relative; left: 2px; Line-Height: 1.5;
+		    }
+           
+        a.island1:hover , .island2:hover , .island3:hover  { /* Attention! pas d'ESPACE entre la class et les ":"  */
+		    padding-top:1%; padding-bottom:1%; /* les padding horizontale ne peuvent pas être mis ici car ça varie en fonction des nom des préfectures. très fastidieus.chronophage!!!*/
+			background-color: #cdbe7f;  position:relative; left:1px;
+
+			-webkit-border-radius:2px;
+			-moz-border-radius:2px;
+			-khtml-border-radius:2px;
+			
+             box-shadow:
+                          0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+                           0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+		    } 
+
+		 
+		 
+         /*PANEAU DE DROITE */ 
+		 /* pour lectureBD.php */
+		 .mnayvawo {  
+			 position:absolute; z-index:2;  left:513px;  right:40px; top:128px;    height:60px; width:543px;   /*   ct width:523px; */
+              /* Pour limiter lataille du conteneur overflow:  auto; sinon il va s'adapter à la taille du contenu */ 
+			  background-color: #e5eecc;
+			  white-space:nowrap;
+			   
+			  box-shadow: 1px 1px 0px 0px green;
+			  border-radius:8px;
+			  -webkit-border-radius:8px; 
+              -moz-border-radius:8px;
+              -khtml-border-radius:8px;
+			  
+			}
+			 
+		
+		 .boutoyahemnayivawo{
+			   background-color: #cdbe9f; height: 40px;   display: block;  margin : auto; text-align:center; padding-top: 5px; padding-bottom: 5px; margin: 9px auto 0px auto ;  width: 80%;
+			  -webkit-border-radius:6px; 
+			   box-shadow:
+                          0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+                           0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+		  }
+			
+		#yivawo  { /* ici le tableau des résultats */       
+	          background-color: #e5eecc;
+	          overflow:  auto;  white-space:nowrap;  display: block; 
+			  position: relative; top:52px; left:5px; height:444px; width:539px; /*ct  left:13px */ /*   ct width:520px; */  
+			  box-shadow: 1px 1px 0px 0px green; 
+			  border-radius:10px;
+			  -webkit-border-radius:10px; 
+			  -moz-border-radius:10px;
+              -khtml-border-radius:10px;
+			  
+         }
+		 
+		 /* Des couleurs alternées dans les lignes de la table: lectureBD.php*/
+		#yivawo table tr:nth-child(2n+2) td {
+				color:Peru ;
+				background: silver;
+				border-radius:4px;
+				-webkit-border-radius:4px;
+				-moz-border-radius:4px;
+                -khtml-border-radius:4px;
+        }
+		
+	    table.color_line_middle tr  th {
+			    border-radius:1px;
+				-webkit-border-radius:1px;
+        }
+		table.color_line_middle tr:nth-child(2n+1) td {
+				color:Peru ;
+				background:silver;
+				-webkit-border-radius:1px;
+        }  
+
+        .color_line_middle { position:absolute; z-index:2;  left:310px;  right:40px; top:195px;    height:440px; width:520px;   
+              overflow:  auto; 
+			  white-space:nowrap;
+			  display: block;  
+		}
+		.island1 , .island2  , .island3   {
+		     font-size: 15px; font-style: italic; font-family: "Times New Roman", Georgia, Serif;  
+        }
+		.sousmenu1 , .sousmenu2  , .sousmenu3   { 
+		      /*
+		      position:absolute;  left:310px;  right:40px; top:195px;    height:440px; width:520px;   
+              overflow:  auto; 
+			  white-space:nowrap;
+			  display: block; 
+			  magin horizontal= (largeurConteneur-largeurContenu - les paddingHorizontal)/2 = (520 -155)/2 = 182,5 environ 
+			  */
+			  position:absolute;  left:80px;      height:100%; width:100%; /*ct height:440px;  width:520px; // this line centers the div      */
+			  z-index:3; /* Thus, the sub-menu will be displayed above the table ( otherwise they would be invisible ) */
+			  white-space:nowrap; /* Because the prefecture HAMAHAMET- MBOIKOU takes 2 lines. This is the solution for it to fit into a single line */
+		      
+			  font-size: 16px; font-style: italic; font-family: "Times New Roman", Georgia, Serif;  
+		}
+		/* REMARQUE: top:320px; =  bottom:-320px;  pour je ne sais quelle raison le top s'applique aux 3 sous-menu, mais pour bottom, i fo le faire séparement */
+		.sousmenu1{  bottom:-320px;}
+		.sousmenu2{  bottom:-450px;}
+		.sousmenu3{  bottom:-398px;}
+
+		
+		

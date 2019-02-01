@@ -1,0 +1,36 @@
+#wrap{
+  height:880px;
+  width:940px;
+  margin: 40px auto;
+
+}
+
+
+body  table tr td  div input
+{
+	border: 0px  #cf3fc3 dotted;
+        font-style: italic;
+        font-size: 15px;
+        font-family: "Times New Roman", Georgia, Serif;
+        color:#00004d;
+        
+        
+}
+
+body  table tr td  input
+{
+	border: 0px  #cf3fc3 dotted;
+        font-style: italic;
+        font-size: 15px;
+        font-family: "Times New Roman", Georgia, Serif;
+        
+        color:#000066
+
+}
+
+
+
+//Essayer border-bottom: 1px  #cf3fc3 dotted;
+
+
+

@@ -1,0 +1,22 @@
+/* inc/accueil/accueil_prefecture.php : menu de droite(commande panel) au survol de la souris */
+                a#zima:hover { color: #000000;  position:relative; left:1px; background-color: #cdbe7f;  }
+				a#rectif:hover {  color: #000000; position:relative; left:1px; background-color: #cdbe7f;}
+				a#print_:hover { color: #000000;  position:relative; left:1px;  background-color:  }
+				a#trier:hover {  color : #000000; position:relative; left:1px;  background-color: }
+				input.boutonSupprimer  {background-color: #e5eecc;  color:Peru ; position:relative;  top:-5px; width:100%; border-radius: 8px 8px 0px 0px; border-radius: 0px 0px 8px 8px;}
+				input.boutonRectifier  {background-color: #e5eecc; color:Peru; position:relative;  top:-15px; width:100%;  }
+				input.boutonImprimer  { background-color: #e5eecc; color:Peru ; position:relative;  ; top:-25px;  width:100%;  }
+                input.boutonTrier  { background-color: #e5eecc; color:Peru ; position:relative;  ; top:-35px;  width:100%; border-radius: 0px 0px 8px 8px;  border-radius: 0px 0px 8px 8px;}                
+ /* inc/accueil/accueil_prefecture.php : un effet creux sur les items menu de droite(commande panel) au survol de la souris */
+				input.boutonSupprimer:hover , .boutonRectifier:hover , .boutonImprimer:hover , .boutonTrier:hover  {  
+					color:green ; 
+					padding-top:1%; padding-bottom:1%; 
+					background-color: #cdbe7f;  position:relative; 
+					border-radius:2px;
+				   -webkit-border-radius:2px;
+				   -moz-border-radius:2px;
+				   -khtml-border-radius:2px;
+					box-shadow:
+						0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+						0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+				}

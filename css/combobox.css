@@ -1,0 +1,55 @@
+
+<style>
+
+#panel, #flip {
+   
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+	-webkit-border-radius:8px;
+}
+
+#panel {
+	 font-size:12px;
+	 overflow:  auto; 
+	 white-space:nowrap;
+
+    display: block;
+	-webkit-border-radius:8px;
+	
+}
+#panel table tr:nth-child(2n+1) td {
+    color:Peru ;
+    background:silver;
+    -webkit-border-radius:4px;
+}
+
+table
+{
+	border-spacing:0px;
+	background:#ffffff;
+	
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:0px;
+	width:100%;
+	
+}
+
+th
+{
+ color:white ;
+ background:green;	
+ -webkit-border-radius:8px;
+ box-shadow: 7px 6px 15px #333;
+
+}
+tr
+{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	margin:0px;
+}
+ 
+

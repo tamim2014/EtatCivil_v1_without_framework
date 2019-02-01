@@ -1,0 +1,30 @@
+Vendredi 18 Mai 2018
+
+SUJET
+
+MOTEUR DE RECHERCHE DE LAPAGE D accueil
+
+
+SERVEUR/lectureBD2_searchPlayBack.php
+
+$requete = "SELECT * FROM liste WHERE acte`=".$num." OR  nom='.$nom.'";
+$result = mysqli_query($conn,$requete);
+
+BUG
+
+Il n y a rien d'aussi pourtant le OU logique(OR) ne fonctionne pas.
+la recherche par numero fonctionne mais
+- Impossible d' effectuer une recherc par nom.
+- j'y ai passé 2 jours avant de comprendre que c'est le OR qui fou la merde
+
+
+
+SOLUTION
+
+Traiter la recherche par nom dans un nouveau fichier separé:SERVEUR/lectureBD2_searchPlayBackByName.php
+*étape1: ce nouveau fichier avec seulement ra recherche par nom
+*étape2: accueil.php
+Je met une condition dans la redirection
+if(isset($_GET['num'])){include("SERVEUR/lectureBD2_searchPlayBack.php");}
+else if(isset($_GET['nom']) ) {include("SERVEUR/lectureBD2_searchPlayBackByName.php");}
+

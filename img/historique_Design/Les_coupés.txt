@@ -1,0 +1,17 @@
+pOUR OBTENIR LEScoupés(simple et double) dans la page lectureBD.php:
+
+
+
+il suffit de placer l'arrière plan juste avant le </BODY>
+
+Comme ça:
+
+
+<table class="tablehaut"><tr><td>  <input type=image src=img/drapeau.png align="left" class="flag" /></td></tr></table>
+<table class="tablebas" style="z-index:1; position:absolute; top:-160px; webkit-border-radius:Opx; "><tr><td>  </td></tr></table>
+<table class="tablebas2" style="z-index:2;  "><tr><td>  </td></tr></table>
+
+<table class="tablebasrallongee"><tr><td>  </td></tr></table> <!-- ça rempli les vide de l'interface -->
+
+
+</body>

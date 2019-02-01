@@ -1,0 +1,35 @@
+
+
+.resultat_moteur { 
+    position: absolute;  
+	left:505px;
+	
+
+	top:114px;    
+	height:60px; 
+	width:539px;   
+    z-index:2;
+	/* Pour limiter lataille du conteneur overflow:  auto; sinon il va s'adapter à la taille du contenu */ 
+	background-color: #e5eecc;
+	white-space:nowrap;
+			   
+	box-shadow: 1px 1px 0px 0px green;
+	-moz-box-shadow: 1px 1px 0px 0px green;
+	-webkit-box-shadow: 1px 1px 0px 0px green;
+
+}
+table.resultat_moteur tr  th {
+
+ border-radius:8px;
+ -webkit-border-radius:8px;
+ -moz-border-radius:8px;
+}
+/************************************** tjrs aucun effet sur Internet Explorer
+
+table.hollowTop tr  td input.flag  {
+        border-radius:20px 0px 0px 20px;
+	}
+
+********************************************/
+	
+
